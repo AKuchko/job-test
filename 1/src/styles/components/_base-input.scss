@@ -1,0 +1,25 @@
+.base-input {
+    padding: 11px 25px;
+    min-width: 230px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 18px;
+
+    &::placeholder {
+        color: gray;
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: #fff;
+        color: rgba($color: #fff, $alpha: .8);
+        background: rgba($color: #000000, $alpha: .8);
+    }
+
+    &:hover {
+        border-color: #fff;
+        color: rgba($color: #fff, $alpha: .8);
+        background: rgba($color: #000000, $alpha: .8);
+    }
+}

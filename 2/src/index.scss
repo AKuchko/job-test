@@ -1,0 +1,43 @@
+@import './styles/common/vars';
+@import './styles/common/reset';
+
+@import './styles/components/base-input';
+@import './styles/components/product-card';
+@import './styles/components/shop';
+@import './styles/components/sidebar';
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    // height: 100vh;
+    padding: 20px;
+}
+
+#app-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 280px;
+    height: 100%;
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+}
+
+.header {
+    margin: 0 auto 50px;
+    width: 100%;
+
+    &__field {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+    }
+}

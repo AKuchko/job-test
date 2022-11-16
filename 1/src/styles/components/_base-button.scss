@@ -1,0 +1,14 @@
+.base-button {
+    padding: 11px 25px;
+    min-width: 230px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 18px;
+
+    &:hover {
+        border-color: #fff;
+        color: rgba($color: #fff, $alpha: .8);
+        background-color: rgba($color: black, $alpha: .8);
+    }
+}

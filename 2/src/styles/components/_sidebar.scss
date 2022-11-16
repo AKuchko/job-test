@@ -1,0 +1,59 @@
+.sidebar {
+    box-shadow: $base-shadow;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+
+    &__title {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__list {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-right: 20px;
+        font-size: 14px;
+        text-transform: lowercase;
+        text-decoration: underline;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    &__count {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            display: block;
+            overflow-x: auto;
+        }
+
+        &__list-item {
+            margin: 0 0 20px;
+        }
+    }
+}

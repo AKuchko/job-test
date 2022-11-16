@@ -1,0 +1,14 @@
+@import './styles/common/reset.scss';
+
+@import './styles/components/base-input';
+@import './styles/components/base-button';
+@import './styles/components/form';
+
+.app-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
